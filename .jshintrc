@@ -129,6 +129,7 @@
       "cherp": false,
 
       // Meteor packages
+      "FlowRouter": false,
       "s": false,
       "Random": false,
       "_": false,               // Underscore.js

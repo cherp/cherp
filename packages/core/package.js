@@ -21,6 +21,7 @@ Package.onUse(function(api) {
   ], 'client');
 
   //common
+  api.use('meteorhacks:flow-router');
   api.use('underscore');
   api.use('underscorestring:underscore.string@3.0.3');
 

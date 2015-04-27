@@ -1,3 +1,5 @@
+"use strict";
+
 Package.describe({
   name: 'cherp:layout',
   version: '0.0.1',

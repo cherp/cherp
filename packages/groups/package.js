@@ -17,6 +17,7 @@ Package.onUse(function(api) {
 
   //use
   api.use('templating', 'client');
+  api.use('meteorhacks:flow-router');
   api.use('cherp:core');
 
   //common

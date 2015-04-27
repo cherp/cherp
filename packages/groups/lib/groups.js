@@ -8,6 +8,8 @@ Meteor.startup(function () {
     }
   });
 
+  cherp.registerRoute('/test', {foo:'bar'});
+
   if (Meteor.isServer) {
     if (cherp.db.groups.find({}).fetch().length === 0) {
       cherp.db.groups.insert({
