@@ -14,12 +14,24 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
+
+  //use
+  api.use('templating', 'client');
   api.use('cherp:core');
-  api.addFiles('groups.js');
+
+  //common
+  api.addFiles('lib/groups.js');
+
+  //client
+  api.addFiles('client/list_groups.html', 'client');
+  api.addFiles('client/list_groups.js', 'client');
+
+  //server
+  api.addFiles('publications/groups.js', 'server');
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('cherp:groups');
-  api.addFiles('groups-tests.js');
+  api.addFiles('tests/groups-tests.js');
 });
