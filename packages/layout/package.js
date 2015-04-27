@@ -9,6 +9,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
   //use
+  api.use('cherp:core');
   api.use([
     'templating',
     'semantic:ui-css'

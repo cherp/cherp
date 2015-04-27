@@ -1,7 +1,5 @@
-"use strict";
-
 Package.describe({
-  name: 'cherp:people',
+  name: 'cherp:core',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -13,18 +11,13 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  //Meteor version
-  console.log(api);
   api.versionsFrom('1.1.0.2');
-  //use
-  api.use('cherp:core');
-  api.use(['templating'], 'client');
-  //add files
-  api.addFiles(['lib/view.html'], 'client');
+  api.export('cherp');
+  api.addFiles('cherp.js');
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('cherp:people');
-  api.addFiles('people-tests.js');
+  api.use('cherp:core');
+  api.addFiles('core-tests.js');
 });
