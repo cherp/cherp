@@ -1,5 +1,10 @@
 <template name="cherpMain">
-  Main
+  Entities:
+  <ul>
+  {{#each entities}}
+    <li>{{s 'capitalize' name}}</li>
+  {{/each}}
+  </ul>
   {{> cherpPeopleView as='card' }}
   {{> cherpPeopleView as='list' }}
   {{> cherpPeopleView as='row' }}

@@ -125,10 +125,15 @@
       "Npm": false,
       "Tinytest": false,
 
-      // common Meteor packages
+      // cherp packages
+      "cherp": false,
+
+      // Meteor packages
+      "s": false,
       "Random": false,
       "_": false,               // Underscore.js
       "$": false,               // jQuery
       "Router": false           // iron-router
+
     }
 }

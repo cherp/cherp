@@ -1,7 +1,7 @@
 "use strict";
 
 Package.describe({
-  name: 'cherp:core',
+  name: 'cherp:groups',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -14,22 +14,12 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-
-  api.use([
-    'underscorestring:underscore.string',
-    'templating',
-  ], 'client');
-
-  //add files
-  api.addFiles('helpers.js', 'client');
-  api.addFiles('cherp.js');
-
-  //export cherp
-  api.export('cherp');
+  api.use('cherp:core');
+  api.addFiles('groups.js');
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('cherp:core');
-  api.addFiles('tests.js');
+  api.use('cherp:groups');
+  api.addFiles('groups-tests.js');
 });

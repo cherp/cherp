@@ -7,4 +7,5 @@
 meteor-platform
 cherp:core
 cherp:layout
+cherp:groups
 cherp:people
