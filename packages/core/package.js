@@ -15,10 +15,14 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
 
+  //client
   api.use([
-    'underscorestring:underscore.string',
     'templating',
   ], 'client');
+
+  //common
+  api.use('underscore');
+  api.use('underscorestring:underscore.string@3.0.3');
 
   //add files
   api.addFiles('helpers.js', 'client');

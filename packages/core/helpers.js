@@ -33,5 +33,5 @@ Template.registerHelper('s', function (operator, str) {
     'slugify',
     'toBoolean'
   ));
-  return s[operator].call(str);
+  return s[operator](str);
 });
