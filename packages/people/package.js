@@ -1,3 +1,5 @@
+"use strict";
+
 Package.describe({
   name: 'cherp:people',
   version: '0.0.1',
@@ -11,8 +13,13 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
+  //Meteor version
+  console.log(api);
   api.versionsFrom('1.1.0.2');
-  api.addFiles('people.js');
+  //use
+  api.use(['templating'], 'client');
+  //add files
+  api.addFiles(['lib/view.html'], 'client');
 });
 
 Package.onTest(function(api) {

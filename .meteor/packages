@@ -7,4 +7,5 @@
 meteor-platform
 autopublish
 insecure
-semantic:ui-css
+cherp:layout
+cherp:people

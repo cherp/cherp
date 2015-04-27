@@ -7,6 +7,8 @@ blaze-tools@1.0.3
 boilerplate-generator@1.0.3
 callback-hook@1.0.3
 check@1.0.5
+cherp:layout@0.0.1
+cherp:people@0.0.1
 ddp@1.1.0
 deps@1.0.7
 ejson@1.0.6
